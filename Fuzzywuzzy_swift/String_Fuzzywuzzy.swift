@@ -120,8 +120,8 @@ public extension String {
                 return String.fuzzRatio(str1: str1, str2: str2)
             }
         }
-
-        return ratios.max()!
+        return ratios[0]
+//        return ratios.max()!
     }
 
     static func fuzzTokenSetRatio(str1: String, str2: String, fullProcess: Bool = true) -> Int {
